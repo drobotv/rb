@@ -24,7 +24,7 @@
   </div>
   <div class="lg:p-8">
     <div
-      class="mx-auto flex w-full max-w-[350px] flex-col justify-center space-y-6"
+      class="mx-auto flex w-full max-w-[350px] flex-col justify-center space-y-2"
     >
       {@render children()}
     </div>

@@ -23,7 +23,7 @@
       {m.auth_login_to_account()}
     </h1>
   </div>
-  <form method="POST" use:enhance class="w-full space-y-4">
+  <form method="POST" use:enhance class="w-full space-y-2">
     <Form.Field {form} name="email">
       <Form.Control let:attrs>
         <Form.Label>{m.email()}</Form.Label>

@@ -21,7 +21,7 @@
   <div class="flex flex-col space-y-2 text-center">
     <h1 class="text-2xl font-semibold tracking-tight">{m.create_account()}</h1>
   </div>
-  <form method="POST" use:enhance class="w-full space-y-4">
+  <form method="POST" use:enhance class="w-full space-y-2">
     <Form.Field {form} name="email">
       <Form.Control let:attrs>
         <Form.Label>{m.email()}</Form.Label>
