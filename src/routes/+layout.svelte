@@ -1,10 +1,18 @@
 <script>
+  import { i18n } from '$lib/i18n';
+  import * as t from '$lib/paraglide/messages';
   import '@/app.css';
-  import { IconCalendar } from '@/lib/icons';
+  import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 
   let { children } = $props();
 </script>
 
-{@render children()}
+<ParaglideJS {i18n}>
+  {@render children()}
 
-<IconCalendar font-size="2rem" />
+  <a href="/">EN</a>
+  <a href="/de">DE</a>
+  <a href="/pl">PL</a>
+
+  <p>{t.user()}</p>
+</ParaglideJS>
