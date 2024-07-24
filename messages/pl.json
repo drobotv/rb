@@ -11,5 +11,6 @@
   "register": "Rejestracja",
   "already_have_an_account": "Posiadasz już konto?",
   "create_account": "Utwórz konto",
-  "form_err_user_exists": "Użytkownik już istnieje."
+  "form_err_user_exists": "Użytkownik już istnieje.",
+  "form_err_invalid_data": "Nieprawidłowa nazwa użytkownika lub hasło."
 }

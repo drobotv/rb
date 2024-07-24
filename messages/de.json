@@ -11,5 +11,6 @@
   "register": "Registrieren",
   "already_have_an_account": "Sie haben bereits ein Konto?",
   "create_account": "Ein Konto erstellen",
-  "form_err_user_exists": "Benutzer existiert bereits."
+  "form_err_user_exists": "Benutzer existiert bereits.",
+  "form_err_invalid_data": "Ungültiger Benutzername oder Passwort."
 }
