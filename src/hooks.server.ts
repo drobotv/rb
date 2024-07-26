@@ -1,10 +1,14 @@
 import { i18n } from '$lib/i18n';
 import { lucia } from '$lib/server/lucia';
-import type { Handle } from '@sveltejs/kit';
+import { redirect, type Handle } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
 
 const authHandle: Handle = async ({ event, resolve }) => {
   const sessionId = event.cookies.get(lucia.sessionCookieName);
+
+  if (!sessionId && event.route.id?.startsWith('/(protected)')) {
+    redirect(302, '/login');
+  }
 
   if (!sessionId) {
     event.locals.user = null;

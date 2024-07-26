@@ -1,7 +1,7 @@
 <script lang="ts">
-	const { children } = $props();
+  const { children } = $props();
 </script>
 
 <main class="h-screen">
-	{@render children()}
+  {@render children()}
 </main>
