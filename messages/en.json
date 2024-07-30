@@ -12,5 +12,20 @@
   "already_have_an_account": "Already have an account?",
   "create_account": "Create an account",
   "form_err_user_exists": "User already exists.",
-  "form_err_invalid_data": "Invalid username or password."
+  "form_err_invalid_data": "Invalid username or password.",
+  "form_logout_title": "You are about to sign out",
+  "form_logout_desc": "This action log you out of this device.",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "toggle_user_menu": "Toggle user menu",
+  "dashboard": "Dashboard",
+  "settings": "Settings",
+  "logout": "Logout",
+  "toggle_menu": "Toggle Menu",
+  "home_page": "Home page",
+  "services": "Services",
+  "bookings": "Bookings",
+  "team": "Team",
+  "availability": "Availability",
+  "toggle_theme": "Toggle theme"
 }

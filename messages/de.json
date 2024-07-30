@@ -12,5 +12,20 @@
   "already_have_an_account": "Sie haben bereits ein Konto?",
   "create_account": "Ein Konto erstellen",
   "form_err_user_exists": "Benutzer existiert bereits.",
-  "form_err_invalid_data": "Ungültiger Benutzername oder Passwort."
+  "form_err_invalid_data": "Ungültiger Benutzername oder Passwort.",
+  "form_logout_title": "Sie sind dabei, sich abzumelden",
+  "form_logout_desc": "Diese Aktion entfernt Ihre Sitzung auf diesem Gerät.",
+  "cancel": "Stornieren",
+  "confirm": "Bestätigen",
+  "toggle_user_menu": "Benutzermenü umschalten",
+  "dashboard": "Armaturenbrett",
+  "settings": "Einstellungen",
+  "logout": "Ausloggen",
+  "toggle_menu": "Menü umschalten",
+  "home_page": "Startseite",
+  "services": "Dienstleistungen",
+  "bookings": "Buchungen",
+  "team": "Team",
+  "availability": "Verfügbarkeit",
+  "toggle_theme": "Design umschalten"
 }
