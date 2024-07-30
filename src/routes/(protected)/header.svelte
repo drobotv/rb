@@ -3,7 +3,7 @@
   import UserDropdown from '$lib/components/modals/user-dropdown.svelte';
   import Button from '$lib/components/ui/button/button.svelte';
   import * as Sheet from '$lib/components/ui/sheet';
-  import { Ghost } from '$lib/icons';
+  import { BellRing, Ghost } from '$lib/icons';
   import { cn } from '$lib/utils';
   import Separator from '@/lib/components/ui/separator/separator.svelte';
   import { m } from '@/lib/i18n';
@@ -48,9 +48,17 @@
       </nav>
     </Sheet.Content>
   </Sheet.Root>
-  <div class="relative ml-auto flex-1 grow-0">
-    <UserDropdown />
+  <div class="relative ml-auto flex-1 grow-0 flex-row">
+    <!-- <Navigation /> -->
   </div>
+  <Button
+    variant="ghost"
+    size="icon"
+    class="mr-1 rounded-full text-muted-foreground transition-colors hover:text-foreground"
+  >
+    <BellRing class="h-5 w-5" />
+  </Button>
+  <UserDropdown />
 </header>
 <Separator />
 

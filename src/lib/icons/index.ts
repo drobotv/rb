@@ -1,3 +1,4 @@
+import BellRing from 'lucide-svelte/icons/bell-ring';
 import Calendar from 'lucide-svelte/icons/calendar';
 import CalendarClock from 'lucide-svelte/icons/calendar-clock';
 import Ghost from 'lucide-svelte/icons/ghost';
@@ -10,6 +11,7 @@ import Sun from 'lucide-svelte/icons/sun';
 import Users from 'lucide-svelte/icons/users';
 
 export {
+  BellRing,
   Calendar,
   CalendarClock,
   Ghost,
