@@ -1,6 +1,26 @@
 <script lang="ts">
+  import ServiceCard from './service-card.svelte';
+
+  const services = [
+    {
+      name: 'Service 1',
+      slug: '/username/service-1',
+      hidden: false,
+      duration: '30 minutes'
+    },
+    {
+      name: 'Service 2',
+      slug: '/username/service-2',
+      hidden: true,
+      duration: '1 hour'
+    }
+  ];
 </script>
 
-<div>
-  <h1>services</h1>
+<div class="space-y-4 overflow-x-auto px-4 py-4 md:px-6">
+  <div class="grid gap-4 md:gap-6">
+    {#each services as { name, slug, hidden, duration }}
+      <ServiceCard {name} {slug} {hidden} {duration} />
+    {/each}
+  </div>
 </div>

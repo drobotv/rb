@@ -27,5 +27,7 @@
   "bookings": "Rezerwacje",
   "team": "Zespół",
   "availability": "Dostępność",
-  "toggle_theme": "Przełącz motyw"
+  "toggle_theme": "Przełącz motyw",
+  "clients": "Klienci",
+  "hidden": "Ukryty"
 }

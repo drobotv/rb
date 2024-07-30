@@ -27,5 +27,7 @@
   "bookings": "Buchungen",
   "team": "Team",
   "availability": "Verfügbarkeit",
-  "toggle_theme": "Design umschalten"
+  "toggle_theme": "Design umschalten",
+  "clients": "Kunden",
+  "hidden": "Versteckt"
 }

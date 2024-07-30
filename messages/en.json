@@ -27,5 +27,7 @@
   "bookings": "Bookings",
   "team": "Team",
   "availability": "Availability",
-  "toggle_theme": "Toggle theme"
+  "toggle_theme": "Toggle theme",
+  "clients": "Clients",
+  "hidden": "Hidden"
 }
