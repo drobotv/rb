@@ -1,6 +1,7 @@
 import BellRing from 'lucide-svelte/icons/bell-ring';
 import Calendar from 'lucide-svelte/icons/calendar';
 import CalendarClock from 'lucide-svelte/icons/calendar-clock';
+import CircleX from 'lucide-svelte/icons/circle-x';
 import Clock from 'lucide-svelte/icons/clock';
 import Ghost from 'lucide-svelte/icons/ghost';
 import LayoutDashboard from 'lucide-svelte/icons/layout-dashboard';
@@ -17,6 +18,7 @@ export {
   BellRing,
   Calendar,
   CalendarClock,
+  CircleX,
   Clock,
   Ghost,
   LayoutDashboard,
