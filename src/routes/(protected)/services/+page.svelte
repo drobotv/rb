@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { m } from '@/lib/i18n';
   import ServiceCard from './service-card.svelte';
 
   const services = [
@@ -24,3 +25,7 @@
     {/each}
   </div>
 </div>
+
+<svelte:head>
+  <title>{m.services()} | R&B</title>
+</svelte:head>

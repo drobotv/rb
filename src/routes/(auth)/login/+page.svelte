@@ -45,3 +45,7 @@
     {m.auth_no_account()}
   </Button>
 </AuthPage>
+
+<svelte:head>
+  <title>{m.login()} | R&B</title>
+</svelte:head>

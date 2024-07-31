@@ -61,3 +61,7 @@
     {m.already_have_an_account()}
   </Button>
 </AuthPage>
+
+<svelte:head>
+  <title>{m.register()} | R&B</title>
+</svelte:head>

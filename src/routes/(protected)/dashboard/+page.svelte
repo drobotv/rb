@@ -20,3 +20,7 @@
   </div>
   <div class="grid gap-4 md:gap-6 lg:grid-cols-2 xl:grid-cols-3"></div>
 </div>
+
+<svelte:head>
+  <title>{m.dashboard()} | R&B</title>
+</svelte:head>
