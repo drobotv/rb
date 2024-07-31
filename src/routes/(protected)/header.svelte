@@ -68,8 +68,8 @@
     <a
       {href}
       class={cn(
-        'flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground',
-        isActive && 'bg-muted-foreground/25 text-foreground'
+        'flex items-center gap-4 rounded-md p-2.5 text-muted-foreground hover:text-foreground',
+        isActive && 'border-0 bg-muted-foreground/25 text-foreground'
       )}
       use:builder.action
       {...builder}

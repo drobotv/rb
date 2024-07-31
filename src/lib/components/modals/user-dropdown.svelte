@@ -5,6 +5,7 @@
   import * as Avatar from '$lib/components/ui/avatar';
   import Button from '$lib/components/ui/button/button.svelte';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
+  import I18nSelect from '@/lib/components/common/i18n-select.svelte';
   import { m } from '@/lib/i18n';
 
   const initials = $page.data?.user?.email?.charAt(0).toUpperCase() ?? 'U';
@@ -21,7 +22,7 @@
     >
       <Avatar.Root>
         <Avatar.Image
-          src={$page.data.user.avatar ?? ''}
+          src={$page.data.user.avatar ?? '/images/avatar-placeholder.jpg'}
           alt={initials}
           class="overflow-hidden"
         />
@@ -56,6 +57,11 @@
     <DropdownMenu.Separator />
 
     <DropdownMenu.Group>
+      <DropdownMenu.Item asChild class="py-0">
+        <I18nSelect />
+      </DropdownMenu.Item>
+      <DropdownMenu.Separator />
+
       <DropdownMenu.Item class="py-0">
         <LightSwitch
           variant="ghost"
