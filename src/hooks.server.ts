@@ -7,7 +7,7 @@ const authHandle: Handle = async ({ event, resolve }) => {
   const sessionId = event.cookies.get(lucia.sessionCookieName);
 
   if (!sessionId && event.route.id?.startsWith('/(protected)')) {
-    redirect(302, '/login');
+    redirect(302, i18n.resolveRoute('/login'));
   }
 
   if (!sessionId) {

@@ -2,7 +2,7 @@ import { db } from '$lib/server/db';
 import { user } from '$lib/server/db/schema';
 import { lucia } from '$lib/server/lucia';
 import { registerSchema } from '$lib/valibot-schema';
-import { m } from '@/lib/i18n.js';
+import { i18n, m } from '@/lib/i18n.js';
 import { fail, redirect } from '@sveltejs/kit';
 import { eq } from 'drizzle-orm';
 import { Argon2id } from 'oslo/password';
@@ -10,7 +10,7 @@ import { setError, superValidate } from 'sveltekit-superforms';
 import { valibot } from 'sveltekit-superforms/adapters';
 
 export const load = async (event) => {
-  if (event.locals.user) redirect(302, '/dashboard');
+  if (event.locals.user) redirect(302, i18n.resolveRoute('/dashboard'));
   return {
     form: await superValidate(valibot(registerSchema))
   };
@@ -18,7 +18,7 @@ export const load = async (event) => {
 
 export const actions = {
   default: async (event) => {
-    if (event.locals.user) redirect(302, '/dashboard');
+    if (event.locals.user) redirect(302, i18n.resolveRoute('/dashboard'));
     const form = await superValidate(event, valibot(registerSchema));
 
     if (!form.valid) {
@@ -56,6 +56,6 @@ export const actions = {
       ...sessionCookie.attributes
     });
 
-    redirect(302, '/dashboard');
+    redirect(302, i18n.resolveRoute('/dashboard'));
   }
 };
