@@ -23,7 +23,6 @@ export const navLinks = {
     { href: '/dashboard', label: m.dashboard, icon: LayoutDashboard },
     { href: '/services', label: m.services, icon: NotebookPen },
     { href: '/bookings', label: m.bookings, icon: Calendar },
-    { href: '/team', label: m.team, icon: Users },
     { href: '/availability', label: m.availability, icon: CalendarClock }
   ] as NavLink[],
   bottom: [{ href: '/settings', label: m.settings, icon: Settings }] as NavLink[]
