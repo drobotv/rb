@@ -7,13 +7,14 @@
   import { m } from '@/lib/i18n';
 
   type Props = {
+    id: string;
     name: string;
     slug: string;
     hidden: boolean;
-    duration: string;
+    duration: number;
   };
 
-  let { name, slug, hidden, duration }: Props = $props();
+  let { id, name, slug, hidden, duration }: Props = $props();
 </script>
 
 <Card.Root>
@@ -34,7 +35,7 @@
     </div>
     <div class="mt-2 flex items-center text-sm">
       <Clock class="mr-1 h-4 w-4" />
-      <span>{duration}</span>
+      <span>{duration} minutes</span>
     </div>
   </Card.Content>
 </Card.Root>
