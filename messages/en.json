@@ -29,5 +29,6 @@
   "availability": "Availability",
   "toggle_theme": "Toggle theme",
   "clients": "Clients",
-  "hidden": "Hidden"
+  "hidden": "Hidden",
+  "no_data": "No data to display"
 }

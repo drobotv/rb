@@ -29,5 +29,6 @@
   "availability": "Dostępność",
   "toggle_theme": "Przełącz motyw",
   "clients": "Klienci",
-  "hidden": "Ukryty"
+  "hidden": "Ukryty",
+  "no_data": "Brak danych do wyświetlenia"
 }

@@ -29,5 +29,6 @@
   "availability": "Verfügbarkeit",
   "toggle_theme": "Design umschalten",
   "clients": "Kunden",
-  "hidden": "Versteckt"
+  "hidden": "Versteckt",
+  "no_data": "Keine Daten zum Anzeigen"
 }

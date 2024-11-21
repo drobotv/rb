@@ -20,7 +20,7 @@ export type NavLink = {
 
 export const navLinks = {
   top: [
-    { href: '/dashboard', label: m.dashboard, icon: LayoutDashboard },
+    // { href: '/dashboard', label: m.dashboard, icon: LayoutDashboard },
     { href: '/services', label: m.services, icon: NotebookPen },
     { href: '/bookings', label: m.bookings, icon: Calendar },
     { href: '/availability', label: m.availability, icon: CalendarClock }

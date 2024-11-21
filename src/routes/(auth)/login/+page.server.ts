@@ -10,7 +10,7 @@ import { setError, superValidate } from 'sveltekit-superforms';
 import { valibot } from 'sveltekit-superforms/adapters';
 
 export const load = async (event) => {
-  if (event.locals.user) redirect(302, i18n.resolveRoute('/dashboard'));
+  if (event.locals.user) redirect(302, i18n.resolveRoute('/services'));
 
   return {
     form: await superValidate(valibot(loginSchema))
@@ -19,7 +19,7 @@ export const load = async (event) => {
 
 export const actions = {
   default: async (event) => {
-    if (event.locals.user) redirect(302, i18n.resolveRoute('/dashboard'));
+    if (event.locals.user) redirect(302, i18n.resolveRoute('/services'));
     const form = await superValidate(event, valibot(loginSchema));
 
     if (!form.valid) {
@@ -54,6 +54,6 @@ export const actions = {
       ...sessionCookie.attributes
     });
 
-    redirect(302, i18n.resolveRoute('/dashboard'));
+    redirect(302, i18n.resolveRoute('/services'));
   }
 };
